@@ -51,16 +51,6 @@ export default class PieChart extends Component {
 
     return (
       <div>
-        {showLegend?
-          <Legend
-            {...this.props}
-            width= {width}
-            margins= {margins}
-            chartSeries= {chartSeries}
-            categoricalColors= {categoricalColors}
-          />
-          : null
-        }
         <ChartPie
           {...this.props}
           width= {width}
